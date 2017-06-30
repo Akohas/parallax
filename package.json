@@ -35,10 +35,21 @@
     "watchify": "^3.9.0"
   },
   "browser": {
-    "parallax": "./bower_components/parallax/deploy/parallax.js"
+    "parallax": "./bower_components/parallax/deploy/parallax.js",
+    "lettering": "./js/vendor/lettering.min.js",
+    "jquery": "./bower_components/jquery/dist/jquery.min.js",
+    "ScrollMagic": "./bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"
   },
   "browserify-shim": {
-    "parallax": "parallax"
+    "parallax": "parallax",
+    "$": "jquery",
+    "ScrollMagic" :  "ScrollMagic",
+    "lettering": {
+      "exports":  "lettering",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
 
   },
   "browserify": {

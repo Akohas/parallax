@@ -1,0 +1,24 @@
+
+
+.rope{
+  background: url(../images/rope.png) no-repeat;
+  position: absolute;
+  height: 400px;
+  width: 134%;
+  left: -10%;
+  background-size: 100%;
+
+
+  &_1 {
+    top: -19%;
+  }
+
+  &_2 {
+    top: -9%;
+  }
+
+  &_3 {
+    top: 0;
+  }
+
+}

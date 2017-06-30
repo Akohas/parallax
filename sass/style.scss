@@ -1,34 +1,17 @@
 @import 'normalize';
+@import 'section';
+@import 'animations';
+@import 'light';
+@import 'board';
+@import 'wave';
+@import 'rope';
 
-@keyframes wave{
-  0%{
-    transform: rotateZ(0deg) translate3d(0,15%,0) rotateZ(0deg);
-  }
-  100%{
-    transform: rotateZ(360deg) translate3d(0,15%,0) rotateZ(-360deg);
-  }
-
-}
-
-
-@keyframes lighthouse{
-  0%{
-    transform: rotateZ(13deg);
-  }
-  50%{
-    transform: rotateZ(-13deg) translateX(-5%);
-  }
-  100%{
-    transform: rotateZ(13deg);
-  }
-
-}
 
 .lighthouse{
   transform: rotateZ(10deg);
   background: url(../images/lighthouse.png);
   position: absolute;
-  bottom: 175px;
+  bottom: 185px;
   transform-origin: bottom;
   right: 300px;
   height: 362px;
@@ -43,45 +26,7 @@
   background-size: 100%;
   position: absolute;
 }
-.section{
-  width: 100%;
-  height: 400px;
-}
-.wave {
-  background: url('../images/wave.png');
-  position: absolute;
-  width: 200%;
-  left: -50%;
-  background-position: center bottom;
-  background-size: auto 101%;
-  animation: wave 4s infinite  linear;
 
-  &_1 {
-    bottom: -90px;
-    height: 420px;
-
-  }
-  &_2 {
-    bottom: 74px;
-    height: 189px;
-
-  }
-  &_3 {
-    bottom: 154px;
-    height: 129px;
-
-
-  }
-  &_4 {
-
-    bottom: 207px;
-    height: 119px;
-  }
-  &_5{
-    bottom: 244px;
-    height: 80px;
-  }
-}
 .layer{
   width: 100%;
   height: 100%;
@@ -94,3 +39,5 @@
   width: 100vw;
   overflow: hidden;
 }
+
+

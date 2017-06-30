@@ -1,0 +1,37 @@
+
+@keyframes wave{
+  0%{
+    transform: rotateZ(0deg) translate3d(0,15%,0) rotateZ(0deg);
+  }
+  100%{
+    transform: rotateZ(360deg) translate3d(0,15%,0) rotateZ(-360deg);
+  }
+
+}
+
+
+@keyframes lighthouse{
+  0%{
+    transform: rotateZ(6deg);
+  }
+  50%{
+    transform: rotateZ(-6deg) translateX(5%);
+  }
+  100%{
+    transform: rotateZ(6deg);
+  }
+
+}
+@keyframes board{
+  0%{
+    transform: rotateZ(7deg);
+  }
+  50%{
+    transform: rotateZ(-7deg) translateX(-8%);
+  }
+  100%{
+    transform: rotateZ(7deg);
+  }
+
+}
+

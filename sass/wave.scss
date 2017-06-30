@@ -1,0 +1,36 @@
+.wave {
+  background: url('../images/wave.png');
+
+  position: absolute;
+  width: 200%;
+  left: -50%;
+  background-position: center bottom;
+  background-size: auto 101%;
+  animation: wave 4s infinite  linear;
+
+  &_1 {
+    bottom: -90px;
+    height: 420px;
+
+  }
+  &_2 {
+    bottom: 74px;
+    height: 189px;
+
+
+  }
+  &_3 {
+    bottom: 144px;
+    height: 139px;
+
+
+  }
+  &_4 {
+    bottom: 197px;
+    height: 119px;
+  }
+  &_5{
+    bottom: 234px;
+    height: 80px;
+  }
+}
