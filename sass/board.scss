@@ -5,85 +5,99 @@
 }
 
 .birds{
-  background: url(../images/board-birds.png) no-repeat;
-  width: 261px;
-  height: 566px;
+  background: url(../images/board-birds.png) no-repeat center top;
+  width: 126px;
+  height: 166px;
   position: absolute;
 }
 .cloud_4{
-  background: url(../images/board-cloud-4.png) no-repeat;
+  background: url(../images/board-cloud-4.png) no-repeat  center top;
   width: 261px;
   height: 566px;
   position: absolute;
 }
 .cloud_3{
-  background: url(../images/board-cloud-3.png) no-repeat;
+  background: url(../images/board-cloud-3.png) no-repeat  center top;
   width: 261px;
   height: 566px;
   position: absolute;
 }
 .cloud_2{
-  background: url(../images/board-cloud-2.png) no-repeat;
+  background: url(../images/board-cloud-2.png) no-repeat  center top;
   width: 261px;
   height: 566px;
   position: absolute;
 }
 .cloud_1{
-  background: url(../images/board-cloud-1.png) no-repeat;
+  background: url(../images/board-cloud-1.png) no-repeat  center top;
   width: 261px;
   height: 566px;
   position: absolute;
 }
+
+.board_1{
+ &.cloud_4{
+    left: 12%;
+    top: 46%;
+    animation: board 5.9s infinite forwards;
+  }
+
+  &.birds {
+    top: 66%;
+    left: 44%;
+    animation: board 7s infinite forwards;
+  }
+
+  &.cloud_3 {
+    right: 27%;
+    animation: board 3s infinite forwards;
+    top: 62%;
+  }
+}
+
 .board_2{
   background-size: 70%;
+  &.cloud_1 {
+    right: 16%;
+    top: 52%;
+  }
+  &.cloud_2 {
+    left: 5%;
+    top: 35%;
+    animation: board 5.5s infinite forwards;
+  }
 }
+
 .board_3 {
   background-size: 60%;
+  &.birds{
+    right: 14%;
+    top: 43%;
+  }
+
+  &.cloud_4{
+    left: 40%;
+    top: 68%;
+    animation: board 4.8s infinite forwards;
+  }
+
+  &.cloud_1{
+    left: 20%;
+    top: 58%;
+  }
+
+}
+
+@media(max-width: 991px){
+  .cloud_1{display: none;}
+  .cloud_3{display: none;}
+  .cloud_4{display: none;}
 }
 
 
-.cloud_4.board_1 {
-  left: 12%;
-  top: 26%;
-  animation: board 5.9s infinite forwards;
-}
 
-.board_1.birds {
-  top: 41%;
-  left: 43%;
-  animation: board 7s infinite forwards;
-}
 
-.cloud_3.board_1 {
-  right: 27%;
-  animation: board 3s infinite forwards;
-  top: 37%;
-}
 
-.cloud_1.board_2 {
-  right: 16%;
-  top: 32%;
-}
-.cloud_2.board_2 {
-  left: 5%;
-  top: 17%;
-  animation: board 5.5s infinite forwards;
-}
 
-.birds.board_3 {
-  right: 14%;
-  top: 31%;
-}
-
-.cloud_4.board_3 {
-  left: 40%;
-  top: 41%;
-  animation: board 4.8s infinite forwards;
-}
-
-.cloud_1.board_3 {
-  left: 20%;
-  top: 31%;
-}
 
 

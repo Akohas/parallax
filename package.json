@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
-
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.22.0",
@@ -43,14 +42,13 @@
   "browserify-shim": {
     "parallax": "parallax",
     "$": "jquery",
-    "ScrollMagic" :  "ScrollMagic",
+    "ScrollMagic": "ScrollMagic",
     "lettering": {
-      "exports":  "lettering",
+      "exports": "lettering",
       "depends": [
         "jquery:jQuery"
       ]
     }
-
   },
   "browserify": {
     "transform": [
@@ -68,9 +66,6 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0"
   },
-
   "author": "",
   "license": "ISC"
-
-
 }
